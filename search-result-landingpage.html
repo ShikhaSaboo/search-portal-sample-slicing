@@ -1,0 +1,359 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+ 	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+	<title>course_page</title>
+	
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/customstyle.css" rel="stylesheet" />
+</head>
+<body>
+	
+		<!--Top-header starts here-->
+	<header class="top-header">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-md-6 col-sm-8">
+	                <div class="top-contact">
+	                    <ul>
+	                        <li><a href="#"><i class="fa fa-envelope-o"></i> info@yourdomain.com</a></li>
+	                        <li> <a href="#"><i class="fa fa-phone"></i> +012 456 3435</a></li>
+	                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+	                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+	                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+	                    </ul>
+	                </div>
+	            </div>
+	            <div class="col-md-6 col-sm-4 col-xs-12">
+	                <div class="top-socialmedia">
+	                    <ul>
+	                        <li><a href="#"> <span class="glyphicon glyphicon-log-in gi-2x"></span> <span>Sign In</span></a></li>
+	                        <li><a href="#"> <span class="glyphicon glyphicon-user gi-2x"></span> <span>Login</span></a></li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</header>
+
+
+		<!--Top-header ends here-->
+		<!--Navbar statrs here-->
+
+	
+			<!-- Navbar ends here -->
+	
+			<!--Header content ends here -->
+
+	<div class="searchbox-wrapper">
+		<div class="container">
+			
+			<div class = " inside-search active-display search-content-display">
+			<div class="inside-search-searchbox ">
+				
+				
+				<div class="searchbox-content-wrapper">
+					<form>
+	                        <div class="input-group">
+
+                            
+                            <input type="text" id="searchtext" class="form-control" placeholder="Search Colleges, agents, courses">
+                            <select name="dropdown1" actionurl="/api/Main/UnAuthorizeData" text="ref_dtl_name" value="ref_dtl_id" rto-combo="" actionname="p_get_ref_code_data" actiondata="@p_ref_code:6" class="dropdown-selector selectpicker " data-toggle="dropdown" data-live-search="false" rto-id="STUDY_LEVEL" style="display: none;" rto-dirty="">
+                                <option>Course Level</option>
+
+                            </select><span class="custom-combobox"><input id="STUDY_LEVEL-input" title="" class="custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left ui-autocomplete-input" autocomplete="off"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><a tabindex="-1" title="Show All Items" class="ui-button ui-widget ui-state-default ui-button-icon-only custom-combobox-toggle ui-corner-right" role="button" aria-disabled="false"><span class="ui-button-icon-primary ui-icon ui-icon-triangle-1-s"></span><span class="ui-button-text"></span></a></span>
+                            <select name="dropdown1" actionurl="/api/Main/UnAuthorizeData" text="ref_dtl_name" value="ref_dtl_id" rto-combo="" actionname="p_get_ref_code_data" actiondata="@p_ref_code:1" class="dropdown-selector selectpicker " data-toggle="dropdown" data-live-search="false" rto-id="COUNTRY" style="display: none;" rto-dirty="">
+                                <option>Study Location</option>
+
+                            </select><span class="custom-combobox"><input id="COUNTRY-input" title="" class="custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left ui-autocomplete-input" autocomplete="off"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><a tabindex="-1" title="Show All Items" class="ui-button ui-widget ui-state-default ui-button-icon-only custom-combobox-toggle ui-corner-right" role="button" aria-disabled="false"><span class="ui-button-icon-primary ui-icon ui-icon-triangle-1-s"></span><span class="ui-button-text"></span></a></span>
+                            <select name="dropdown1" actionurl="/api/Main/UnAuthorizeData" text="faculty_name" value="faculty_id" rto-combo="" actionname="p_select_items" actiondata="@p_flag:S|@p_type:FACULTY" class="dropdown-selector selectpicker " data-toggle="dropdown" data-live-search="false" rto-id="FACULTY" style="display: none;" rto-dirty="">
+                                <option>Field Of Study</option>
+
+                            </select><span class="custom-combobox"><input id="FACULTY-input" title="" class="custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left ui-autocomplete-input" autocomplete="off"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><a tabindex="-1" title="Show All Items" class="ui-button ui-widget ui-state-default ui-button-icon-only custom-combobox-toggle ui-corner-right" role="button" aria-disabled="false"><span class="ui-button-icon-primary ui-icon ui-icon-triangle-1-s"></span><span class="ui-button-text"></span></a></span>
+                            <span class="input-group-btn">
+                                
+                                <a class="ag-btn btn-structure btn search" id="btnsearch"> <i class="fa fa-search fa-lg"></i></a>
+                            </span>
+                        </div>
+	                    </form>
+				
+				</div>
+			</div>
+			</div>
+			<div class="course-collapse-box collapse-box">
+				<div class = "search-filter-collapse">
+					<button class = "filter-btn-style readmore-btn" id = "filter-btn">Filter
+						<i class="fa fa-chevron-down" aria-hidden="true"></i>
+					</button>
+				</div>
+				<div class = "active-search search-content-display">
+				<div class="searchbox-content-wrapper">
+					<form>
+	                        <div class="input-group">
+
+                            
+                            <input type="text" id="searchtext" class="form-control" placeholder="Search Colleges, agents, courses">
+                            <select name="dropdown1" actionurl="/api/Main/UnAuthorizeData" text="ref_dtl_name" value="ref_dtl_id" rto-combo="" actionname="p_get_ref_code_data" actiondata="@p_ref_code:6" class="dropdown-selector selectpicker " data-toggle="dropdown" data-live-search="false" rto-id="STUDY_LEVEL" style="display: none;" rto-dirty="">
+                                <option>Course Level</option>
+
+                            </select><span class="custom-combobox"><input id="STUDY_LEVEL-input" title="" class="custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left ui-autocomplete-input" autocomplete="off"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><a tabindex="-1" title="Show All Items" class="ui-button ui-widget ui-state-default ui-button-icon-only custom-combobox-toggle ui-corner-right" role="button" aria-disabled="false"><span class="ui-button-icon-primary ui-icon ui-icon-triangle-1-s"></span><span class="ui-button-text"></span></a></span>
+                            <select name="dropdown1" actionurl="/api/Main/UnAuthorizeData" text="ref_dtl_name" value="ref_dtl_id" rto-combo="" actionname="p_get_ref_code_data" actiondata="@p_ref_code:1" class="dropdown-selector selectpicker " data-toggle="dropdown" data-live-search="false" rto-id="COUNTRY" style="display: none;" rto-dirty="">
+                                <option>Study Location</option>
+
+                            </select><span class="custom-combobox"><input id="COUNTRY-input" title="" class="custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left ui-autocomplete-input" autocomplete="off"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><a tabindex="-1" title="Show All Items" class="ui-button ui-widget ui-state-default ui-button-icon-only custom-combobox-toggle ui-corner-right" role="button" aria-disabled="false"><span class="ui-button-icon-primary ui-icon ui-icon-triangle-1-s"></span><span class="ui-button-text"></span></a></span>
+                            <select name="dropdown1" actionurl="/api/Main/UnAuthorizeData" text="faculty_name" value="faculty_id" rto-combo="" actionname="p_select_items" actiondata="@p_flag:S|@p_type:FACULTY" class="dropdown-selector selectpicker " data-toggle="dropdown" data-live-search="false" rto-id="FACULTY" style="display: none;" rto-dirty="">
+                                <option>Field Of Study</option>
+
+                            </select><span class="custom-combobox"><input id="FACULTY-input" title="" class="custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left ui-autocomplete-input" autocomplete="off"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><a tabindex="-1" title="Show All Items" class="ui-button ui-widget ui-state-default ui-button-icon-only custom-combobox-toggle ui-corner-right" role="button" aria-disabled="false"><span class="ui-button-icon-primary ui-icon ui-icon-triangle-1-s"></span><span class="ui-button-text"></span></a></span>
+                            <span class="input-group-btn">
+                                
+                                <a class="ag-btn btn-structure btn search" id="btnsearch"> <i class="fa fa-search fa-lg"></i></a>
+                            </span>
+                        </div>
+	                    </form>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+			<!--Searchbox ends here -->
+	<div class = "page-content-wrapper clearfix">
+		<div class = "container">
+			<div class = "row">
+			<section class="col-md-8 col-sm-12 course-content">
+				<h1>Associate Degree in Applied Science Marine Environment</h1>
+				<h2><a href= "#" class="subheading-a">Associate Degree in Applied Science Marine Environment</a></h2>
+				<div class="line"></div>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum 
+				</p><br />
+				<h3>At a glance</h3>
+				<p><span>Type Of Institution : </span>University</p>
+						<p><span>Level : </span>Under Graduate</p>
+						<p><span>Location : </span>Australia</p>
+                	<div class="col-md-12 col-sm-12">
+                		<div class="subject-content-wrapper row" >
+                    		<h3>Subjects</h3>
+                            <ul class="subject-list list-group ">
+                                <li class="col-xs-6">Identify fibres and fabrics</li>
+                                <li class="col-xs-6">Modify patterns to create basic styles</li>
+                                <li class="col-xs-6">Draw and interpret a basic sketch</li>
+                                <li class="col-xs-6">Identify fabric performance and handling requirements</li>
+                                <li class="col-xs-6">Identify design process for fashion designs</li>
+                                <li class="col-xs-6">Apply design studio process</li>
+                            </ul>
+                        </div>
+                    
+                </div>
+
+
+
+
+
+				<div class = "course-detail-tabs">
+					<ul class="tab-custom nav nav-tabs">
+
+    					<li class="active"><a data-toggle="tab" href="#aboutus">About Us</a></li>
+    					<li><a data-toggle="tab" href="#services">Services</a></li>
+					    
+  					</ul>
+  					<div class="tab-content">
+					    <div id="aboutus" class="tab-pane fade in active">
+					      <h4>About Us</h4>
+					      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum </p>
+					    </div>
+					    <div id="services" class="tab-pane fade">
+					      <h4>Services</h4>
+					      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					    </div>
+					    
+					</div>
+				</div>
+			</section>
+			<section class="col-md-4 col-sm-6">
+				<div class="university-container">
+				<div class="university-header-wrapper">
+				<div class="university-image">
+					<img src="images/hv-university.jpg" alt="no-image" />
+					<div class="overlay"> </div>
+					<div class="logo-wrapper">
+						<div class="logo-content">
+							<img src="images/ch.png" alt="no-image" />
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class = "university-main-content-wrapper">
+					<div class = "university-content">
+						<h3>Course Contact Details</h3>
+						<h4>Visit Link</h4>
+						<p><a href="#">University of australia</a></p>
+						<h4>Phone</h4>
+						<p> +61 491 570 157</p>
+						<h4>Fax</h4>
+						<p> +61 491 570 157</p>
+						<h4>Email</h4>
+						<p><a href="#">information@australiauniv.co.au</a></p>
+						<h4><i class="fa fa-map-marker" aria-hidden="true"></i> Institute Location</h4>
+					</div>
+					<div class = "map" id = "map"></div>
+				</div>
+				</div>
+				<div class = "related-courses">
+					<div class = "realted-courses-header">
+						<h3>Related Courses</h3>
+					</div>
+                    <div class="related-courses-content">
+                        <div class="col-md-5 row">
+                             <div class="related-icon-wrapper">
+                                <img src="images/ch.png" alt="no-image" />
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-9 related-topic row ">
+                            <h5><a href="#">Associate Degree in Applied Science Marine Environment</a></h5>
+                            <p><a href="#">Associate Degree in Applied Science Marine Environment</a></p>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="line"> </div>
+                    </div>
+                    <div class="related-courses-content">
+                        <div class="col-md-5 row">
+                            <div class="related-icon-wrapper">
+                                <img src="images/ch.png" alt="no-image" />
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-9 related-topic row ">
+                            <h5><a href="#">Associate Degree in Applied Science Marine Environment</a></h5>
+                            <p><a href="#">Associate Degree in Applied Science Marine Environment</a></p>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="line"> </div>
+                    </div>
+                    <div class="related-courses-content">
+                        <div class="col-md-5 row">
+                            <div class="related-icon-wrapper">
+                                <img src="images/ch.png" alt="no-image" />
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-9 related-topic row ">
+                            <h5><a href="#">Associate Degree in Applied Science Marine Environment</a></h5>
+                            <p><a href="#">Associate Degree in Applied Science Marine Environment</a></p>
+                        </div>
+                        <div class="clearfix"></div>
+                       
+                    </div>
+				</div>
+				
+			</section>
+			</div>
+		</div>
+	</div>		
+			
+				<!--footer starts here -->
+	<footer>
+		<div class = "footer-top-wrapper">
+		<div class = "container">
+			<div class = "footer-top-content-wrapper clearfix">
+			<div class = "row">
+			<div class = "col-md-4 col-sm-6 clearfix">
+				<h3>Useful Links</h3>
+				<ul class=" footer-list list-group ">
+					<li class="col-xs-6"><a href = "#">Support & Help</a></li>
+					<li class="col-xs-6"><a href = "#">Privacy</a></li>
+					<li class="col-xs-6"><a href = "#">Affiliate Program</a></li>
+					<li class="col-xs-6"><a href = "#">Policy</a></li>
+					<li class="col-xs-6"><a href = "#">Knowledge Base</a></li>
+					<li class="col-xs-6"><a href = "#">Advertise Policy</a></li>
+					<li class="col-xs-6"><a href = "#">Career With US</a></li>
+					<li class="col-xs-6"><a href = "#">Terms Of Services</a></li>
+					<li class="col-xs-6"><a href = "#">Contact</a></li>
+					<li class="col-xs-6"><a href = "#">Support</a></li>
+					<li class="col-xs-6"><a href = "#">How It Works</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<h3>About Us</h3>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+				<p> Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<h3>Contact Us</h3>
+				<div class="contact-content clearfix">
+					<div class="left-contact-content">
+						<i class="fa fa-map-marker " aria-hidden="true"></i>
+					</div>
+					<div class="right-contact-content clearfix">
+						 <span>Address </span>: 70 McDowell Street, Tanawha, Queens-land, Australia
+					</div>
+					
+				</div>
+				<div class="contact-content clearfix">
+					<div class="left-contact-content">
+						<i class="fa fa-phone " aria-hidden="true"></i>
+					</div>
+					
+					<div class="right-contact-content clearfix">
+						 <span>Phone Number </span>: (07) 5313 1744
+					</div>
+				</div>
+				<div class="contact-content clearfix">
+					<div class="left-contact-content">
+						<i class="fa fa-envelope-o" aria-hidden="true"></i>
+					</div>
+					
+					<div class="right-contact-content clearfix">
+						 <span>Email </span>: yourmail@example.com
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="contact-content top-contact">
+	                    <ul>
+	                        
+	                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+	                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+	                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+	                    </ul>
+	             </div>
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom-wrapper">
+		<a href="#">&copy; <script> 
+		var getDate = new Date();
+		var getYear = getDate.getFullYear();
+		document.write(getYear);
+		 </script> Aggreegator. All rights reserved</a> 
+	</div>
+	</footer>
+		
+						
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+
+	<script src="js/inside-search.js"></script>
+	<script>
+		function initMap(){
+			var gCoordinates={lat: -25.363, lng: 131.044};
+			var map=new google.maps.Map(document.getElementById('map'),{
+				zoom:5,
+				center:gCoordinates
+			});
+			var marker=new google.maps.Marker({
+				position:gCoordinates,
+				map:map
+			});
+		}
+	</script>
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwbAfO0NRcKLTuHb7Gqa7DBGIJry2inhQ&callback=initMap">
+    </script>
+</body>
+</html>

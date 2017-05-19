@@ -1,0 +1,139 @@
+.message-popup .modal-content{
+    border:1px solid  #00a651;
+    border-radius: 11px;
+    font-family: sans-serif;
+
+}
+.message-popup .modal-header{
+    background: #00a651;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom:2px solid #e5e5e5;
+    color:#fff;
+    font-weight:600;
+}
+.message-popup .modal-body{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.message-popup .form-control{
+    border-radius:4px;
+    width: 100%;
+}
+.message-popup label{
+    font-size: 14px;
+    margin-top: 10px;
+    color:#000000;
+}
+.form-line{
+    border-bottom:1px solid #e5e5e5;
+    margin:10px 0px;
+}
+.marginAll
+{
+    margin: 5px 2px;
+}
+
+.message-popup label input[type='checkbox']{
+    display: block;
+}
+.message-popup .checkbox{
+    float: left;
+    width: 170px;
+    margin: 0;
+    padding: 0;
+    height: 35px;
+}
+.message-popup .checkbox-list{
+    margin:0px 0px  20px;
+    padding-left: 0px;      
+}
+.message-popup  .checkbox:after{
+        display:none;
+}
+.message-popup .checkbox-inline{
+    display: inline-block;
+    width: 100%;
+    padding-left: 0px;
+}
+
+.message-popup textarea{
+    width: 100%;
+    min-height: 100px;
+    overflow-y:auto;
+    margin-bottom: 10px;
+}
+.message-popup textarea:focus{
+    border:1px solid #f3f3f3;
+    box-shadow: 0px 0px 6px 2px #f5f5f5;
+    padding:10px;
+}
+.message-popup .enquiry-question{
+    width: 100%;
+    padding-left:21.5px;
+}
+.message-popup .submit-btn{
+    padding:0px 20px 0px 18px;
+    color:#fff;
+}
+.message-popup .custom-combobox {
+    display: block;
+    width: 100%;
+    height: 34px;
+    margin:0px;
+     position: relative;
+    
+   
+    background-color: #fff;
+    
+    border-radius: 4px;
+    
+}
+.message-popup .custom-combobox-input {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-right:none;
+    border-radius: 4px 0px 0px 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.message-popup .ui-button-icon-only,.message-popup  .ui-button-icon-only:hover {
+   
+    background: url('../images/down-arrow.png') #ffffff no-repeat 70% ;
+    width: 20px;
+    height: 34px;
+    position: absolute;
+    top: 0;
+    right:1px;
+    border: 1px solid #ccc;
+    border-radius: 0px 4px 4px 0px;
+    border-left:none;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+@media screen and (max-width: 991px){
+    .message-popup .modal-body{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .message-popup textarea{
+        width: 100%;
+    
+    }
+}
+@media screen and (max-width: 520px){
+    .message-popup .col-md-6{
+        width: 100%;
+    }
+
+}
